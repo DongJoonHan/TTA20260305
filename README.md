@@ -6,3 +6,8 @@
 
 # Junit4 프로젝트 파일 위치
 https://github.com/DongJoonHan/junit4
+
+## Git으로 클론 받는 방법
+```
+git clone https://github.com/DongJoonHan/junit4.git
+```
