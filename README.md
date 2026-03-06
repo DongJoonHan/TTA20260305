@@ -22,3 +22,9 @@ https://hub.docker.com/_/sonarqube
 ## Docker compose file 위치
 https://github.com/SonarSource/docker-sonarqube/blob/master/example-compose-files/sq-with-postgres/docker-compose.yml
 (우상단 다운로드 버튼으로 다운로드함)
+
+
+# 몇 가지 분석 팁
+## Git 등의 변경 이력을 추적하지 않는 경우
+- 보통 다운로드 받은 코드를 분석하는 경우
+<img width="2000" height="971" alt="image" src="https://github.com/user-attachments/assets/d581d1cb-21d4-40bf-b71f-f4ce77eb9087" />
