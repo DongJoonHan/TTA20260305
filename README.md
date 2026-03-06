@@ -31,3 +31,29 @@ https://github.com/SonarSource/docker-sonarqube/blob/master/example-compose-file
 
 ## 순환복잡도 룰 추가
 <img width="2000" height="861" alt="image" src="https://github.com/user-attachments/assets/ad979ed3-3783-4a80-962a-4fd2545f5c28" />
+
+# Sonarqube 대안
+## 룰 기반 정적분석
+- Java: PMD, FindBug
+- C/CPP: CppCheck
+- python: pylint / pycodestyle
+
+## (함수별) 순환 복잡도 / 라인수
+- Lizard (Python 패키지) : 언어 안따짐
+
+## 전체 라인수/주석비율
+- CLOC : 언어 안따짐
+
+## 복사/붙여넣기 코드
+- PMD -> CPD: PMD 6.55.0 언어 안따짐
+
+## 코딩 스타일(컨벤션)
+- 구글 표준 https://google.github.io/styleguide/
+- cpplint 도구로 확인 가능
+
+## 위 도구 사용 방법 링크
+https://github.com/DongJoonHan/QAInfo
+
+
+
+
