@@ -20,6 +20,22 @@ https://hub.docker.com/_/sonarqube
 https://github.com/SonarSource/docker-sonarqube/blob/master/example-compose-files/sq-with-postgres/docker-compose.yml
 (우상단 다운로드 버튼으로 다운로드함)
 
+# Sonar-Scanner in Docker
+Docker에서 Sonar-Scanner로 실행할 때, 
+Mount 된 Host의 Workspace에 압축을 해제하고,
+각 Job에서 상대 경로로 접근
+
+## 폴더 구성
+<img width="472" height="94" alt="image" src="https://github.com/user-attachments/assets/411344b7-1ff9-439c-894d-7374dcbf6585" />
+
+## Job에서 Execute Shell 로 실행
+```
+../sonar-scanner-linux/bin/sonar-scanner \
+  -Dsonar.projectKey=Design_jenkins \
+  -Dsonar.sources=. \
+  -Dsonar.host.url=http://IP:9000 \
+  -Dsonar.token=sqa_token값
+```
 
 # 몇 가지 분석 팁
 ## Git 등의 변경 이력을 추적하지 않는 경우
