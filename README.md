@@ -22,11 +22,15 @@ https://github.com/SonarSource/docker-sonarqube/blob/master/example-compose-file
 
 # Sonar-Scanner in Docker
 Docker에서 Sonar-Scanner로 실행할 때, 
-Mount 된 Host의 Workspace에 압축을 해제하고,
+jenkins_home이 Mount 된 Host의 Workspace에 압축을 해제하고,
 각 Job에서 상대 경로로 접근
 
 ## 폴더 구성
-<img width="472" height="94" alt="image" src="https://github.com/user-attachments/assets/411344b7-1ff9-439c-894d-7374dcbf6585" />
+### Mount 설정: docker-compsoe.yml
+<img width="209" height="33" alt="image" src="https://github.com/user-attachments/assets/61caaff9-06cd-4103-9f37-2a97dbf4ef2b" />
+
+### 실제 폴더 위치: workspace 폴더 내
+<img width="464" height="183" alt="image" src="https://github.com/user-attachments/assets/12f6a77e-fb58-4a14-86c9-212375959a6e" />
 
 ## Job에서 Execute Shell 로 실행
 ```
